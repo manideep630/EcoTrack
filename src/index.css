@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-eco-charcoal bg-eco-beige font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl;
+  }
+  
+  .btn-primary {
+    @apply bg-eco-forest text-white px-6 py-3 rounded-full font-medium hover:bg-eco-leaf transition-colors duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-eco-mint focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-eco-forest border-2 border-eco-forest px-6 py-3 rounded-full font-medium hover:bg-eco-forest hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-eco-mint focus:ring-offset-2;
+  }
+
+  .nav-link {
+    @apply text-eco-charcoal hover:text-eco-forest font-medium transition-colors duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-eco-forest focus:ring-2 focus:ring-eco-mint outline-none transition-all duration-200 bg-white;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #95d5b2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #40916c;
+}
